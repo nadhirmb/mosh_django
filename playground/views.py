@@ -5,5 +5,7 @@ from django.http import HttpResponse
 # request handler
 # action
 
+
+# we can return http resonse as well as rednering a templates
 def say_hello(request):
-  return HttpResponse('Hello World!')
+  return render(request, 'hello.html')
